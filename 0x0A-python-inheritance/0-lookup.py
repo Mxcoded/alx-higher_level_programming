@@ -10,6 +10,7 @@ def lookup(obj):
     '''
     return dir(obj)
 
+
 """
 Contains definition of the function lookup
 """
@@ -24,4 +25,3 @@ def lookup(obj):
     """
 
     return (dir(obj))
-
