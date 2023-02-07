@@ -1,30 +1,15 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
-''' Module: 1-my_list
-'''
+"""
+contains the MyList class
+"""
 
 
 class MyList(list):
-    ''' Represents a MyList
-    '''
+    """a subclass of list"""
+    def __init__(self):
+        """initializes the object"""
+        super().__init__()
 
     def print_sorted(self):
-        '''
-        prints the list, but sorted
-        '''
+        """prints the sorted list"""
         print(sorted(self))
-=======
-"""
-Contains definiton for the class MyList that inherits from list.
-"""
-
-
-class MyList(list):
-    """definiton for the class MyList that inherits from list.
-    """
-    def print_sorted(self):
-        """Prints list elements(int) in ascending order"""
-
-        sortedlist = sorted(self)
-        print(sortedlist)
->>>>>>> 5b415aa45b6b3aae46cf0e94a0553789b46d83d0
