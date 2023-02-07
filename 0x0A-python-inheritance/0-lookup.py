@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
+
 ''' function that returns the list
 '''
 
@@ -9,7 +9,7 @@ def lookup(obj):
     Returns a list object
     '''
     return dir(obj)
-=======
+
 """
 Contains definition of the function lookup
 """
@@ -24,4 +24,4 @@ def lookup(obj):
     """
 
     return (dir(obj))
->>>>>>> 5b415aa45b6b3aae46cf0e94a0553789b46d83d0
+
