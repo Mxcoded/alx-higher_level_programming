@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" lists all states from the database hbtn_0e_0_usa """
 import MySQLdb
 import sys
 
@@ -7,7 +8,7 @@ if __name__ == "__main__":
     password = sys.argv[2]
     dbname = sys.argv[3]
 
-    # Connect to the database
+    """ Connect to the database """
     db = MySQLdb.connect(
         host="localhost",
         user=username,
@@ -16,18 +17,18 @@ if __name__ == "__main__":
         port=3306
     )
 
-    # Create a cursor object
+    """ Create a cursor object """
     cursor = db.cursor()
 
-    # Execute the SQL query to retrieve all states
+    """ Execute the SQL query to retrieve all states """
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
 
-    # Fetch all rows and print them
+    """ Fetch all rows and print them """
     rows = cursor.fetchall()
     for row in rows:
         print(row)
 
-    # Close the cursor and database connection
+    """ Close the cursor and database connection """
     cursor.close()
     db.close()
 
