@@ -21,7 +21,9 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    """ Query the database for all City objects and their associated State objects """
+    """ 
+     Query the database for all City objects and their associated State objects 
+    """
     cities = session.query(City).order_by(City.id)
 
     """ Print the results """
@@ -30,4 +32,3 @@ if __name__ == '__main__':
 
     """ Close the session """
     session.close()
-
