@@ -1,2 +1,2 @@
-#Introduction to Python
-Python Programming language is a cross platform language that simplify programming
+# Introduction to Python
+<p>Python Programming language is a <em>cross platform language</em> that simplify programming</p>
